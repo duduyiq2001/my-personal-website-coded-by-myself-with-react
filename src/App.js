@@ -1,24 +1,43 @@
-import logo from './logo.svg';
-import './App.css';
-
+import React, { Component } from 'react';
+import {Link} from 'react-router-dom';
+import Myprojects from "./pages/myprojects";
+import Experiences from "./pages/experience";
+import Home from "./pages/home";
+import Navbar from './compo/navbar';
+import Hobbies from './pages/hobbies';
+import Music from './pages/musictastes';
+import { BrowserRouter,Routes,Route} from 'react-router-dom';
+import Dropd from './compo/dropdown.jsx'
+import "./App.css"
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    
+   
+  <BrowserRouter>
+   
+     
+        
+        <Navbar/>
+        <Dropd />
+
+     
+        
+
+        
+     <div>
+      <Routes>
+        <Route exact path="/" element ={<Home/>} />
+        <Route exact path="/myprojects" element ={<Myprojects/>} />
+        <Route exact path="/Experiences" element ={<Experiences/>} />
+        <Route exact path="/hobbies" element ={<Hobbies/>} />
+        <Route exact path="/musictastes" element ={<Music/>} />
+      </Routes>
+      </div>
+      
+    
+</BrowserRouter>
+
+
   );
 }
 

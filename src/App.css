@@ -1,38 +1,253 @@
-.App {
-  text-align: center;
+.navlinks a{
+ font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+ font-size: 1rem;
+ color:white;
+ text-decoration: none;
+ margin:auto;
+ 
 }
-
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.navlinks a:hover{
+  color:red;
 }
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.navitem{
+  gap:1rem;
 }
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
+.navlinks{
+  list-style: none;
+  display:flex;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
+  align-items:center;
+  flex-direction:row;
+  max-width: 100%;
+  gap:1rem;
+ 
+}
+.navlinks1{
+  list-style: none;
+  display:flex;
+  position:absolute;
+  bottom: 10%;
+  left:30%;
+}
+
+
+.navbar{
+  position: absolute;
+  top: 0;
+  right: 0;
+  overflow: hidden;
+  padding: 0;
+  margin: 0;
+  background: rgb(0, 229, 255);
+  height:8%;
+  width: 31.25%;
+  
+ 
+
+}
+.navcenter{
+ 
+  margin:auto;
+}
+.banner{
+background-color: #20232a;
+display:flex;
+flex-wrap: nowrap;
+width: auto;
+height: 100px;
+
+top:0;
+left:0;
+
+}
+.iconlist{
+  display:inline-flex;
+  position: absolute;
+  height: 80px;
+  width: 170px;
+  top: 59px;
+  right: 477.65px;
+  /*bottom: 15%;
+  height:auto;
+  */ 
+}
+.iconlist a{
+ 
+  padding: 3px;
+  padding-right: 20px;
+}
+.icons{
+  
+  width: 32.9px;
+  height: 32.9px;
+ 
+
+}
+.iconitem{
+  display: inline;
+  width:100%;
+  height:100%;
+  
+}
+h1{
   color: white;
 }
+.iconitem a{
+  margin:auto;
+  
 
-.App-link {
-  color: #61dafb;
+}
+.button_container{
+  width:30%;
+  height:60px;
+  position:absolute;
+  top:120px;
+  right:0;
+  color: blueviolet;
+  display:flex;
+}
+.badge{
+width:20%;
+}
+.sentence{
+width: 70%;
+  
+}
+.buttonp{
+padding-right: 10px;
+width: 25%;
+}
+.buttonm{
+ width: 25%;
+}
+h2{
+  color: white;
+  margin: 0 auto;
+  text-align: center;
+}
+body {
+  background-image: url(./images/wp6911028.jpg);
+  background-color: #cccccc;
+  animation: scroll 70s linear infinite;
+ }
+
+ @keyframes scroll {
+  100%{
+   background-position:0px -3000px;
+ }
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+@media (prefers-reduced-motion) {
+ body {
+   animation: scroll 200s linear infinite;
+ }
+}
+.propic{
+  display: flex;
+  height: 100%;
+  width:100%;
+  justify-content: center;
+}
+p{
+  text-indent : 30px;
+  margin:0 auto;
+  width:70%;
+  color: #cccccc;
+  border: #cccccc;
+  border-width: 3px;
+  border-style: solid;
+}
+.propic img{
+  width:40%;
+  height: 40%;
+  
+}
+.proj1{
+  height: 220px;
+}
+.proj1 div{
+  height:150px;
+}
+.proj1 h2{
+  float: left;
+}
+.proj1 h5{
+  position: relative;
+  top:38.4px;
+  right:308.38px;
+  float: left;
+}
+.description{
+  width: 60%;
+  float:right;
+  align-self: center;
+  display: flex;
+  justify-content: center;
+ 
+  
+}
+.description p{
+  text-indent: 30px;
+}
+h5{
+  color:white;
+}
+.proj1detail{
+  
+ position: relative;
+ top:23px ;
+  display: flex;
+  float: left;
+}
+.proj1detail a{
+  width: 40%;
+  display: flex;
+  justify-content: center;
+
+}
+.imgclass{
+  border-radius: 8%;
+  width: 400px;
+  height: 150px;
+  align-self: center;
+}
+.feedbackbox{
+  display: flex ;
+  position:absolute;
+  right:0px;
+  justify-content: center;
+  
+}
+ form{
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  border-top:#cccccc;
+  border-style: solid;
+  border-width: 2px;
+  border-radius: 2px;
+  
+
+ }
+ .formbuttons{
+  border:#cccccc;border-style: solid;border-width: 2px;border-radius: 2px;
+ }
+ .feedbackbox1{
+  display: flex ;
+  flex-direction: column;
+  border:#cccccc;
+  border-style: solid;
+  border-width: 2px;
+  border-radius: 2px;
+  
+}
+.proj1 h6{
+  color:white;
+  position: relative;
+  top:35.4px;
+  right:140px;
+
+}
+.into p{
+text-indent : 30px;
 }
